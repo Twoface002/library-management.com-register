@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TCAS | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://library-management.com/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="https://library-management.com/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://library-management.com/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"/>
+    <style>
+        .callout {
+            border-radius: .5rem;
+            /* box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); */
+            background-color: #fff;
+            border-left: 5px solid #e9ecef;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+
+        .closeCallout {
+            outline: 0 !important;
+        }
+        .b-lr-1{
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;}
+    </style>
+    <script src="https://library-management.com/front/js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', 'button.closeCallout', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+
+    </script>
+</head>
+<body
+    class="hold-transition   register-page ">
+<div
+    class="  register-box ">
+    <div class="login-logo  register-logo ">
+        <a href="#">Tirukkoilur College of Acts and Science</a>
+    </div>
+    <!-- /.login-logo -->
+        <div class="card">
+        <div class="card-body register-card-body">
+            <p class="login-box-msg">Register</p>
+                        <form method="POST" action="https://library-management.com/register" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="5oNONLBUguuHfWfVDh7WijWWX7WtCacq4lVh0XgU">                <div class="input-group mb-3">
+                    <input type="text" class="form-control " name="name"
+                           value="" required autocomplete="name" autofocus
+                           placeholder="Name">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control " name="email"
+                           value="" required autocomplete="email"
+                           placeholder="E-Mail Address">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control " name="phone"
+                           value="" required
+                           placeholder="Phone">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-phone-alt"></span>
+                        </div>
+                    </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+
+
+                        <select  name="sel_course"
+                                class="form-control" style="border-right: 1px solid #ced4da;">
+                            <option value="">--Select--</option>
+                                                               <option value="4">BSC</option>
+                                                               <option value="5">BBA</option>
+                                                               <option value="6">BCA</option>
+                                                               <option value="7">MCA</option>
+                                                               <option value="8">MBA</option>
+                                                    </select>
+
+                        <select  name="sel_year"
+                                class="form-control" style="border-right: 1px solid #ced4da;">
+                            <option value="">--Select--</option>
+                                                            <option value="1">1st Year</option>
+                                                            <option value="3">2nd Year</option>
+                                                            <option value="4">3rd Year</option>
+                                                            <option value="5">4th Year</option>
+                                                    </select>
+
+                    </div>
+                                                    <div class="input-group mb-3">
+                        <div class="input-group b-lr-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Photo</span>
+                            </div>
+                            <input accept=".jpg,.jpeg,.png"
+                                   class="form-control text-sm"
+                                    name="photo"
+                                   type="file">
+                        </div>
+                    </div>
+                                                    <div class="input-group mb-3">
+                        <div class="input-group b-lr-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Proof</span>
+                            </div>
+                            <input accept=".jpg,.jpeg,.png,.pdf"
+                                   class="form-control text-sm"
+                                    name="proof" type="file">
+                        </div>
+                    </div>
+                
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control"
+                           class="form-control " name="password"
+                           required autocomplete="new-password" placeholder="Password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control"
+                           name="password_confirmation" required autocomplete="new-password"
+                           placeholder="Confirm Password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                            <label for="agreeTerms">
+                                I agree to the <a href="#">terms</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-sm btn-dark btn-block">Register</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+                    </div>
+        <!-- /.form-box -->
+    </div><!-- /.card -->   
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="https://library-management.com/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="https://library-management.com/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://library-management.com/js/adminlte.min.js"></script>
+</body>
+</html>
